@@ -12,8 +12,9 @@
 .menu__item {
   position: relative;
   
-  &::after {
-    display: block;
+  &::before {
+    display: none;
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -23,9 +24,17 @@
   }
   
   &:hover,
+  &:active {
+    .menu__sublist {
+      display: block;
+    }
+  }
+  &:hover,
   &:active,
   &--active {
-    
+    &::before {
+      display: block;
+    }
   }
 }
 
@@ -49,6 +58,7 @@
 }
 
 .menu__sublist {
+  display: none;
   .reset();
   list-style: none;
   position: absolute;
