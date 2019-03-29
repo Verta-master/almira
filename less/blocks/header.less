@@ -1,0 +1,43 @@
+.header {
+  padding-top: 40px;
+  padding-bottom: 15px;
+  background-image: linear-gradient(to bottom, #d9d9d9 0, #d9d9d9 20px, #fff 20px, #fff 100%);
+  
+  .logo {
+    svg {
+      width: 186px;
+      height: 45px;
+      fill: @blue;
+    }
+  }
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__contacts {
+  font-size: 20px;
+  font-weight: 500;
+  color: @blue;
+  line-height: 1.2;
+  text-align: right;
+  padding-left: 25px;
+  background-image: url(../img/icons/phone-receiver.svg);
+  background-repeat: no-repeat;
+  background-position: left top 3px;
+  background-size: 18px 18px;
+  
+  a {
+    display: block;
+    .transition();
+    
+    &:hover,
+    &:active {
+      color: #c4c4c4;
+      .transition();
+    }
+  }
+}
