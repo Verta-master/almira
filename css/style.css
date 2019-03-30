@@ -1126,6 +1126,150 @@ a.breadcrumbs__link:active::after {
 .product__form {
   margin-top: 10px;
 }
+.card__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 40px;
+}
+.card__img {
+  width: 480px;
+  height: 400px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #f4f4f4;
+}
+.card__info {
+  width: calc(100% - 550px);
+}
+.card__title {
+  margin-top: 5px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+}
+.card__table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.card__table td:first-child {
+  width: 230px;
+  color: #a0a0a0;
+}
+.card__table td:nth-child(2) {
+  color: #000;
+}
+.card__table td {
+  height: 33px;
+}
+.card__price {
+  margin-top: 10px;
+  color: #000;
+  font-size: 30px;
+  font-weight: 500;
+}
+.card__select {
+  width: 205px;
+  height: 50px;
+  padding-right: 20px;
+  padding-left: 25px;
+  color: #000;
+  font-weight: 500;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #e8e8e8;
+  border-radius: 3px;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxMzggNzkuMTU5ODI0LCAyMDE2LzA5LzE0LTAxOjA5OjAxICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+IEmuOgAAAEhJREFUCJltzbENwCAQA8CrflXEYOkRS2SsT0OkB1G4sU8yvGiZ6Ra0ZQwk+gX1tQ0IzBMXNBF/ueETZaZ6U/GGNljwsxJ1+wCbiFuJJV+o1gAAAABJRU5ErkJggg==');
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 10px 6px;
+}
+.card__select::-ms-expand {
+  color: transparent;
+  border: none;
+  background-color: transparent;
+}
+.tabs {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+.tabs__btns {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tabs__btns .ui-tabs-active {
+  color: #fff;
+  background-color: #fdbf00;
+}
+.tabs__name {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 500;
+  background-color: #fff;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
+}
+.tabs__name a {
+  outline: none;
+  width: 216px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tabs__field {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 50px;
+  padding-bottom: 25px;
+  text-align: center;
+  font-size: 18px;
+  background-color: #fff;
+}
+.tabs__title {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 500;
+}
 @media (max-width: 1220px) {
   .wrapper {
     width: 100%;
@@ -1218,6 +1362,21 @@ a.breadcrumbs__link:active::after {
   }
   .catalog__item {
     width: 280px;
+  }
+  .card__wrap {
+    display: block;
+  }
+  .card__img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  .card__info {
+    width: 480px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (max-width: 766px) {
@@ -1324,5 +1483,17 @@ a.breadcrumbs__link:active::after {
   }
   .footer__bottom p {
     margin-top: 10px;
+  }
+  .card__table td:first-child {
+    width: 50%;
+  }
+  .tabs__field {
+    padding: 15px;
+  }
+  .tabs__btns {
+    display: block;
+  }
+  .tabs__name a {
+    width: 100%;
   }
 }
