@@ -1278,6 +1278,7 @@ a.breadcrumbs__link:active::after {
   width: 100%;
   padding: 30px;
   padding-left: 110px;
+  padding-bottom: 25px;
   font-size: 15px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
@@ -1288,7 +1289,7 @@ a.breadcrumbs__link:active::after {
 }
 .contacts__block--address {
   background-image: url(../img/icons/placeholder.svg);
-  background-size: 41px 53px;
+  background-size: 48px 60px;
 }
 .contacts__block--time {
   background-image: url(../img/icons/time.svg);
@@ -1301,8 +1302,15 @@ a.breadcrumbs__link:active::after {
 .contacts__block:last-child {
   border-bottom: 0;
 }
+.contacts__block--img {
+  padding-bottom: 43px;
+}
+.contacts__block--img img {
+  margin-top: 10px;
+}
 .contacts__title {
   margin-top: 0;
+  margin-bottom: 15px;
   font-size: 24px;
   font-weight: 500;
 }
@@ -1322,6 +1330,9 @@ a.breadcrumbs__link:active::after {
 }
 .contacts__item {
   width: 30%;
+}
+.contacts__item p {
+  margin-top: 0;
 }
 .contacts__item a {
   font-size: 24px;
@@ -1372,7 +1383,7 @@ a.breadcrumbs__link:active::after {
   opacity: 1;
 }
 .form__input {
-  width: 30%;
+  width: 31%;
   height: 45px;
   padding: 0 20px;
 }
@@ -1410,6 +1421,9 @@ a.breadcrumbs__link:active::after {
   .footer__list {
     margin-left: 0;
     margin-right: 0;
+  }
+  .contacts__item {
+    width: 33%;
   }
 }
 @media (max-width: 1022px) {
@@ -1496,6 +1510,13 @@ a.breadcrumbs__link:active::after {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+  .contacts__list {
+    display: block;
+  }
+  .contacts__item {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 766px) {
@@ -1614,5 +1635,26 @@ a.breadcrumbs__link:active::after {
   }
   .tabs__name a {
     width: 100%;
+  }
+  .contacts__block {
+    padding-left: 30px;
+    background-image: none;
+  }
+  .form__line {
+    display: block;
+  }
+  .form__input {
+    width: 100%;
+  }
+  .form__wrap {
+    padding: 30px;
+  }
+  .form__btn {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .form {
+    margin-bottom: 40px;
   }
 }
