@@ -445,12 +445,6 @@ button {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0);
 }
-h1 {
-  margin-bottom: 8px;
-  font-size: 30px;
-  line-height: 1.2;
-  font-weight: 500;
-}
 .wrapper {
   width: 1220px;
   padding-left: 20px;
@@ -632,6 +626,7 @@ h1 {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+h2,
 .title {
   margin-top: 0;
   margin-bottom: 15px;
@@ -639,6 +634,30 @@ h1 {
   line-height: 1.2;
   font-size: 30px;
   font-weight: 500;
+}
+h1 {
+  margin-bottom: 8px;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+.title-1 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+h3,
+.title-3 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+h4,
+.title-4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
 }
 .btn {
   width: 131px;
@@ -1399,6 +1418,163 @@ a.breadcrumbs__link:active::after {
   margin-left: auto;
   margin-right: auto;
   font-size: 18px;
+}
+.about {
+  margin-bottom: 100px;
+}
+.about__block {
+  padding: 20px 40px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #e8e8e8;
+}
+.about__block:last-child {
+  border-bottom: 0;
+}
+.about__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.about__icon {
+  width: 60px;
+}
+.about__info {
+  width: calc(100% - 90px);
+}
+.about__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.about__img {
+  width: 320px;
+  height: 220px;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 70px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.about__img:nth-of-type(3n) {
+  margin-right: 0;
+}
+.about__img img {
+  display: block;
+  min-height: 100%;
+}
+.about__text {
+  margin-top: 45px;
+}
+.about__table {
+  width: 100%;
+  margin-bottom: 70px;
+  border-collapse: collapse;
+  border: 1px solid #e8e8e8;
+}
+.about__table th {
+  height: 70px;
+  text-align: left;
+  font-weight: 500;
+  background-color: #e8e8e8;
+}
+.about__table th:first-child {
+  padding-left: 30px;
+}
+.about__table td {
+  height: 55px;
+  font-size: 14px;
+  border-top: 1px solid #e8e8e8;
+}
+.about__table td:first-child {
+  width: 47%;
+  padding-left: 30px;
+}
+.about__table td:nth-child(2) {
+  width: 20%;
+}
+.about__table td:nth-child(3) {
+  width: 21%;
+}
+.about__table td:last-child {
+  width: 12%;
+}
+.about__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.about__column {
+  width: 50%;
+}
+.about__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 30px;
+}
+.about__list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+.about__list li::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #009dc8;
+}
+.about__numeric {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: myCounter;
+  padding-left: 30px;
+}
+.about__numeric li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+.about__numeric li::before {
+  counter-increment: myCounter;
+  content: counter(myCounter) ".";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  display: block;
+  font-weight: 500;
 }
 @media (max-width: 1220px) {
   .wrapper {
