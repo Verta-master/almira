@@ -1270,6 +1270,125 @@ a.breadcrumbs__link:active::after {
   font-size: 24px;
   font-weight: 500;
 }
+.contacts {
+  margin-bottom: 20px;
+}
+.contacts__block {
+  position: relative;
+  width: 100%;
+  padding: 30px;
+  padding-left: 110px;
+  font-size: 15px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #e8e8e8;
+  background-repeat: no-repeat;
+  background-position: top 40px left 40px;
+}
+.contacts__block--address {
+  background-image: url(../img/icons/placeholder.svg);
+  background-size: 41px 53px;
+}
+.contacts__block--time {
+  background-image: url(../img/icons/time.svg);
+  background-size: 45px 45px;
+}
+.contacts__block--call {
+  background-image: url(../img/icons/phone-call.svg);
+  background-size: 41px 41px;
+}
+.contacts__block:last-child {
+  border-bottom: 0;
+}
+.contacts__title {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.contacts__item {
+  width: 30%;
+}
+.contacts__item a {
+  font-size: 24px;
+}
+.contacts__item a:hover,
+.contacts__item a:active {
+  color: #319cc5;
+}
+.form {
+  margin-bottom: 100px;
+}
+.form .title {
+  text-align: center;
+}
+.form__wrap {
+  padding: 40px 40px;
+  padding-bottom: 50px;
+  background-color: #f9f9f9;
+  border-top: 4px solid #319cc5;
+}
+.form__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.form__message,
+.form__input {
+  margin-bottom: 20px;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+.form__message::-webkit-input-placeholder,
+.form__input::-webkit-input-placeholder {
+  color: #acacac;
+  opacity: 1;
+}
+.form__message::-ms-input-placeholder,
+.form__input::-ms-input-placeholder {
+  color: #acacac;
+  opacity: 1;
+}
+.form__message::placeholder,
+.form__input::placeholder {
+  color: #acacac;
+  opacity: 1;
+}
+.form__input {
+  width: 30%;
+  height: 45px;
+  padding: 0 20px;
+}
+.form__message {
+  width: 100%;
+  height: 150px;
+  min-height: 150px;
+  padding: 20px;
+}
+.form__btn {
+  width: 190px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+}
 @media (max-width: 1220px) {
   .wrapper {
     width: 100%;
